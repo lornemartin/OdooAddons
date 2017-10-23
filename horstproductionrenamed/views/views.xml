@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="horstproduction.list">
+      <field name="name">horstproduction list</field>
+      <field name="model">horstproduction.horstproduction</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="horstproduction.action_window">
+      <field name="name">horstproduction window</field>
+      <field name="res_model">horstproduction.horstproduction</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="horstproduction.action_server">
+      <field name="name">horstproduction server</field>
+      <field name="model_id" ref="model_horstproduction_horstproduction"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="horstproduction" id="horstproduction.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="horstproduction.menu_1" parent="horstproduction.menu_root"/>
+    <menuitem name="Menu 2" id="horstproduction.menu_2" parent="horstproduction.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="horstproduction.menu_1_list" parent="horstproduction.menu_1"
+              action="horstproduction.action_window"/>
+    <menuitem name="Server to list" id="horstproduction" parent="horstproduction.menu_2"
+              action="horstproduction.action_server"/>
+    -->
+  </data>
+</odoo>
